@@ -109,6 +109,13 @@ nav a:hover{
     color:#888;
 }
 
+.logo-placeholder img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
 .hero h1{
     font-size:5rem;
     font-weight:800;
@@ -310,6 +317,11 @@ footer{
 nav ul{
     display:none;
 }
+
+.logo-placeholder{
+    width:120px;
+    height:120px;
+}
 }
 </style>
 </head>
@@ -334,7 +346,7 @@ nav ul{
 <div class="hero-content">
 
 <div class="logo-placeholder">
-    <img src="fotos/ICMC26_clear.png" alt="Logo ICMC 2026" width="1000">
+    <img src="fotos/ICMC26_clear.png" alt="Logo ICMC 2026" loading="lazy" class="responsive-logo">
 </div>
 
 <h1></h1>
