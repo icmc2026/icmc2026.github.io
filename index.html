@@ -248,28 +248,35 @@ section{
 
 /* SPONSOR */
 
+#sponsors{
+    padding:100px 20px;
+}
+
 .sponsors{
+    max-width:1200px;
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap:20px;
+    align-items: center;
 }
 
 .sponsor-box{
     height:120px;
-    min-height:120px;
     display:flex;
     align-items:center;
     justify-content:center;
+    background:#111;
+    border:1px solid rgba(255,0,0,.3);
     overflow:hidden;
 }
 
 .sponsor-box img{
-    max-width:100%;
-    max-height:100%;
+    width:100%;
+    height:100%;
     object-fit:contain;
     display:block;
 }
-
 /* CONTACT */
 
 .contact{
