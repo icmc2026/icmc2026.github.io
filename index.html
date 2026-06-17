@@ -200,22 +200,30 @@ section{
 
 .about-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:minmax(320px,450px) 1fr;
     gap:50px;
-    align-items:center;
+    align-items:start;
 }
 
 .image-placeholder{
-    height:400px;
+    min-height:360px;
     border:2px dashed #ff1a1a;
     display:flex;
     align-items:center;
     justify-content:center;
     color:#777;
+    overflow:hidden;
 }
 
-.align-right{
-    text-align:right;
+.image-placeholder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.align-left{
+    text-align:left;
 }
 
 .dashed-list{
@@ -463,6 +471,10 @@ del carico e pianificazione.
 
 <div class="about-grid">
 
+<div class="image-placeholder">
+    <img src="fotos/ICMC copia/471959998_10160975691893325_3214425853797202988_n.jpg" width="450" >
+</div>
+
 <div>
 <p>
 I Campionati Italiani di Corrieri in Bici non sono soltanto una competizione
@@ -485,10 +497,6 @@ Il programma prevede, oltre alle gare:
     <li>spazi espositivi dedicati al mondo bike</li>
     <li>iniziative aperte al pubblico</li>
 </ul>
-</div>
-
-<div class="image-placeholder">
-    <img src="fotos/ICMC copia/471959998_10160975691893325_3214425853797202988_n.jpg" width="450" >
 </div>
 
 </div>
