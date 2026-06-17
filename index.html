@@ -218,6 +218,24 @@ section{
     text-align:right;
 }
 
+.dashed-list{
+    list-style:none;
+    padding-left:1.25rem;
+    margin-top:0.5rem;
+}
+
+.dashed-list li{
+    position:relative;
+    padding-left:1rem;
+    margin-bottom:0.5rem;
+}
+
+.dashed-list li::before{
+    content:"–";
+    position:absolute;
+    left:0;
+}
+
 /* PROGRAM */
 
 .program-grid{
@@ -458,13 +476,15 @@ trasformando la competizione in un’occasione di consapevolezza collettiva.
 
 <br>
 
-<p>
+<p class="align-right">
 Il programma prevede, oltre alle gare:
-- incontri e talk dedicati alla logistica urbana sostenibile
-- momenti di approfondimento sulle politiche di mobilità
-- spazi espositivi dedicati al mondo bike
-- iniziative aperte al pubblico.
 </p>
+<ul class="dashed-list">
+    <li>- incontri e talk dedicati alla logistica urbana sostenibile</li>
+    <li>- momenti di approfondimento sulle politiche di mobilità</li>
+    <li>- spazi espositivi dedicati al mondo bike</li>
+    <li>- iniziative aperte al pubblico</li>
+</ul>
 </div>
 
 <div class="image-placeholder">
